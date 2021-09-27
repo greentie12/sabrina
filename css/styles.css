@@ -50,7 +50,18 @@ header {
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
+}
+
+.current {
+  background-color: #2c32a3;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.current a {
+  color: #ede6c7;
 }
 
 main {
