@@ -1,0 +1,126 @@
+body {
+  font-family: Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+}
+
+p,
+a {
+  font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  /* border-bottom: 1px solid #2c32a3; */
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #787eff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease-in;
+}
+
+a:hover {
+  color: #2c32a3;
+}
+
+hr {
+  color: #2c32a3;
+  height: 2px;
+  background-color: #2c32a3;
+}
+
+header {
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+main {
+  background-color: #ede6c7;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.profile-pic,
+.skills-img {
+  float: right;
+  margin-left: 1rem;
+}
+
+.profile-pic img,
+.skills-img img {
+  width: 400px;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Soft Skills page styling */
+
+#soft-skills {
+  border-collapse: collapse;
+  width: 75%;
+  color: #fff;
+  padding-top: 3rem;
+  margin: auto;
+}
+
+#soft-skills td,
+#soft-skills th {
+  border: 1px solid #ede6c7;
+  padding: 0.5rem;
+}
+
+#soft-skills th {
+  padding: 12px 0;
+  text-align: left;
+  background-color: #464646;
+  color: #fff;
+  text-align: center;
+}
+
+#soft-skills td:first-child {
+  text-align: center;
+}
+
+#soft-skills tr:nth-child(even) {
+  background-color: #787eff;
+}
+
+#soft-skills tr:nth-child(odd) {
+  background-color: #2c32a3;
+}
+
+#soft-skills td {
+  max-width: 400px;
+}
+
+footer {
+  background-color: #787eff;
+  text-align: center;
+}
+
+footer img {
+  width: 275px;
+}
