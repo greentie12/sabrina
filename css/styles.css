@@ -21,7 +21,7 @@ h3 {
   /* border-bottom: 1px solid #2c32a3; */
 }
 
-li {
+ul {
   list-style: none;
 }
 
@@ -86,7 +86,9 @@ main {
 }
 
 .profile-pic,
-.skills-img {
+.skills-img,
+.hobbies-img,
+.reggae-img {
   float: right;
   margin-left: 1rem;
 }
@@ -94,6 +96,11 @@ main {
 .profile-pic img,
 .skills-img img {
   width: 400px;
+}
+
+.hobbies-img img,
+.reggae-img img {
+  width: 550px;
 }
 
 .main-heading {
@@ -141,12 +148,65 @@ main {
   max-width: 400px;
 }
 
+/* hobbies page styling */
+.hobbies-main {
+  padding-left: 2rem;
+  line-height: 1.7;
+}
+
+.hobby-section {
+  padding-top: 3rem;
+}
+
+.travel {
+  margin-bottom: 5rem;
+}
+
+.music {
+  margin-top: 2rem;
+}
+
+.music h3 {
+  display: inline-block;
+}
+
+.hobby-list h3 {
+  text-align: center;
+}
+
+.ul-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.hobby-list ul:before {
+  content: attr(aria-label);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: -15px;
+}
+
+.hobby-list ul {
+  list-style-type: disc;
+}
+
+.hobby-list ul li a {
+  color: #2c32a3;
+}
+
+.hobby-list ul li a:hover {
+  color: #787eff;
+}
+
 footer {
   background-color: #787eff;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
+  width: 100%;
 }
 
 footer span {
@@ -161,4 +221,12 @@ footer .color-div {
   background-color: #2c32a3;
   height: 50px;
   width: 50px;
+}
+footer a {
+  color: #ede6c7;
+}
+
+.footer-link a {
+  font-size: 1rem;
+  margin-right: 0.5rem;
 }
