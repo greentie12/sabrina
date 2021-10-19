@@ -118,7 +118,7 @@ main {
   padding-top: 3rem;
   margin: auto;
 }
-
+/*  */
 #soft-skills td,
 #soft-skills th {
   border: 1px solid #ede6c7;
@@ -128,7 +128,7 @@ main {
 #soft-skills th {
   padding: 12px 0;
   text-align: left;
-  background-color: #464646;
+  background-color: #333333;
   color: #fff;
   text-align: center;
 }
@@ -151,7 +151,6 @@ main {
 
 /* hobbies page styling */
 .hobbies-main {
-  padding-left: 2rem;
   line-height: 1.7;
 }
 
@@ -165,10 +164,6 @@ main {
 
 .music {
   margin-top: 2rem;
-}
-
-.music h3 {
-  display: inline-block;
 }
 
 .hobby-list h3 {
@@ -238,7 +233,9 @@ main {
   margin-right: 0.5rem;
 }
 
-@media screen and (max-width: 768px) {
+/* mobile styling up to 767px */
+
+@media screen and (max-width: 767px) {
   .container {
     max-width: 95%;
     margin: auto;
@@ -255,6 +252,18 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+  }
+
+  .bio-section .main-heading h1 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .hide {
+    display: none;
   }
 
   .color-div {
@@ -305,8 +314,8 @@ main {
   .hobbies-img img,
   .reggae-img img,
   .footer-logo img {
-    width: 100%;
-    max-width: 375px;
+    width: 75%;
+    max-width: 350px;
   }
 
   .interests,
@@ -331,7 +340,46 @@ main {
     line-height: 1.5;
   }
 
+  .hobby-section .main-heading h1 {
+    font-size: 1.7rem;
+  }
+
   .main-footer {
     flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-header {
+    max-width: 95%;
+  }
+  .header-logo img {
+    width: 60%;
+  }
+
+  .bio-section .main-heading h1 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .reggae-img img {
+    width: 90%;
+  }
+
+  .skills-img {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+
+  .skill-h1 {
+    display: none;
   }
 }
