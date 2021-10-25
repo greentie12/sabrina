@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0004fbb654.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/form.css" /> -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <div class="header-logo">
+          <img src="./images/headerlogo-1.png" alt="" />
+          <div class="color-div"></div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="soft-skills.html">Soft Skills</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="articles-col">
+          <article class="grid1">
+            <h3>Favorite TV Shows</h3>
+            <ol>
+              <li>Friends</li>
+              <li>Seinfeld</li>
+              <li>Breaking Bad</li>
+              <li>Sopranos</li>
+            </ol>
+            <h3>Favorite Movies</h3>
+            <ol>
+              <li>Godfather</li>
+              <li>Forest Gump</li>
+              <li>Pulp Fiction</li>
+              <li>Inception</li>
+            </ol>
+
+            <aside>
+              Insert a few sentences here about your favorite show or movie.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+              deleniti dolor architecto praesentium. Dolorum deserunt, odio
+              nostrum dolore perferendis quod!
+            </aside>
+          </article>
+
+          <article class="grid2">
+            <h3>Favorite Books</h3>
+            <ol>
+              <li>The Shining</li>
+              <li>1984</li>
+              <li>Game of Thrones</li>
+            </ol>
+            <h3>Favorite Music Artists"</h3>
+            <ol>
+              <li>Bob Marley</li>
+              <li>The Beatles</li>
+              <li>Lauryn Hill</li>
+            </ol>
+
+            <aside>
+              Write something here about Bob Marley --------- Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Optio, autem.
+
+              <figure>
+                <figcaption>Listen to Buffalo Soldier by Bob Marley</figcaption>
+                <audio controls src="./sounds/Buffalo-Soldier.mp3"></audio>
+              </figure>
+            </aside>
+          </article>
+
+          <article class="grid3">
+            <h3>Favorite Sports</h3>
+            <ol>
+              <li>Basketball</li>
+              <li>Soccer</li>
+              <li>Football</li>
+            </ol>
+            <h3>Favorite Foods"</h3>
+            <ol>
+              <li>Jerk Chicken</li>
+              <li>Curry Goat</li>
+              <li>Tacos</li>
+            </ol>
+
+            <aside>
+              Insert a few sentences here about your favorite sport or food.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate accusantium quia debitis! perferendis quod!
+            </aside>
+          </article>
+        </div>
+
+        <hr />
+
+        <h3 class="form-h3">
+          Please provide your info below for more information
+        </h3>
+        <form>
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <div class="info-container">
+              <div class="info-item">
+                <label for="name">First Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user-name"
+                  placeholder="Required"
+                  required
+                />
+              </div>
+
+              <div class="info-item">
+                <label for="name">Last Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user-name"
+                  placeholder="Required"
+                  required
+                />
+              </div>
+
+              <div class="info-item">
+                <label for="email">Email Address</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="user-email"
+                  placeholder="Required"
+                  required
+                />
+              </div>
+
+              <div class="info-item">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="user-phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  inputmode="numeric"
+                  placeholder="123-456-7890"
+                />
+              </div>
+
+              <label>Best time of the day to call:</label>
+              <div class="newsletter-item">
+                <input
+                  type="radio"
+                  name="user-format"
+                  id="format-html"
+                  value="format-html"
+                  checked
+                />
+                <label id="time" class="check-label time" for="format-html"
+                  >8am - 12pm</label
+                >
+              </div>
+
+              <div class="newsletter-item">
+                <input
+                  type="radio"
+                  name="user-format"
+                  id="format-text"
+                  value="format-text"
+                />
+                <label class="check-label time" for="format-text"
+                  >12pm - 5pm</label
+                >
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="middle-line"></div>
+
+          <div class="newsletter-container">
+            <fieldset>
+              <legend>Newsletter</legend>
+
+              <label
+                >Select the topic you would like to receive more information
+                about.</label
+              >
+
+              <div class="newsletter-item">
+                <input
+                  type="checkbox"
+                  name="user-newsletter"
+                  id="news-html"
+                  value="HTML"
+                  checked
+                />
+                <label class="check-label" for="news-html"
+                  >Interests & Hobbies</label
+                >
+              </div>
+
+              <div class="newsletter-item">
+                <input
+                  type="checkbox"
+                  name="user-newsletter"
+                  id="news-css"
+                  value="CSS"
+                />
+                <label class="check-label" for="news-css">Favorites</label>
+              </div>
+
+              <div class="newsletter-item">
+                <input
+                  type="checkbox"
+                  name="user-newsletter"
+                  id="news-js"
+                  value="Javascript"
+                />
+                <label class="check-label" for="news-js">Soft Skills</label>
+              </div>
+
+              <label>How did you hear about this site?</label>
+              <div class="newsletter-item">
+                <input
+                  type="radio"
+                  name="user-format"
+                  id="format-html"
+                  value="format-html"
+                  checked
+                />
+                <label class="check-label" for="format-html">LinkedIn</label>
+              </div>
+
+              <div class="newsletter-item">
+                <input
+                  type="radio"
+                  name="user-format"
+                  id="format-text"
+                  value="format-text"
+                />
+                <label class="check-label" for="format-text">Facebook</label>
+              </div>
+
+              <div class="newsletter-item">
+                <input
+                  type="radio"
+                  name="user-format"
+                  id="format-text"
+                  value="format-text"
+                />
+                <label class="check-label" for="format-text">Friend</label>
+              </div>
+
+              <div class="newsletter-item">
+                <input
+                  type="radio"
+                  name="user-format"
+                  id="format-text"
+                  value="format-text"
+                />
+                <label class="check-label" for="format-text">Other</label>
+              </div>
+
+              <label for="topics">Ask a question below.</label>
+              <textarea name="topics" id="topics"></textarea>
+            </fieldset>
+          </div>
+          <div class="btn-container">
+            <button type="reset">Reset</button>
+            <button type="submit">Sign Up</button>
+          </div>
+        </form>
+
+        <section class="address">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <p>Sabrina Blackman</p>
+            <p>555 Leverest Place</p>
+            <p>New York, NY, 10021</p>
+          </div>
+        </section>
+      </main>
+      <footer class="main-footer">
+        <div class="footer-logo">
+          <span> &copy;</span>
+          <img src="./images/footer-logo.svg" alt="" />
+        </div>
+        <div class="color-div"></div>
+        <div class="footer-link">
+          <a href="mailto:sabrina@example.com">sabrina@example.com</a>
+          <a href="tel:+5555551212">555.555.1212</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
